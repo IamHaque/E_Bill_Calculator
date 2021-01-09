@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Bill Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>E-Bill Calculator</h1>
+      </header>
+
+      <section>
+        <form id="form">
+          <div class="input-container">
+            <label for="bill_amount">Bill Amount (₹)</label>
+            <input id="bill_amount" type="number" />
+          </div>
+          <p id="hidden">1</p>
+
+          <div class="input-container">
+            <label for="meter_1">Meter #1 Reading (kWH)</label>
+            <input class="meter_input" id="meter_1" type="number" />
+          </div>
+          <p class="meter_amount">To pay: <span>200.0</span></p>
+
+          <div class="input-container">
+            <label for="meter_2">Meter #2 Reading (kWH)</label>
+            <input class="meter_input" id="meter_2" type="number" />
+          </div>
+          <p class="meter_amount">To pay: <span>200.0</span></p>
+
+          <div class="input-container">
+            <label for="meter_3">Meter #3 Reading (kWH)</label>
+            <input class="meter_input" id="meter_3" type="number" />
+          </div>
+          <p class="meter_amount">To pay: <span>200.0</span></p>
+
+          <div class="input-container">
+            <label for="meter_4">Meter #4 Reading (kWH)</label>
+            <input class="meter_input" id="meter_4" type="number" />
+          </div>
+          <p class="meter_amount">To pay: <span>200.0</span></p>
+
+          <div class="input-container">
+            <label for="meter_5">Meter #5 Reading (kWH)</label>
+            <input class="meter_input" id="meter_5" type="number" />
+          </div>
+          <p class="meter_amount">To pay: <span>200.0</span></p>
+
+          <div class="input-container">
+            <label for="meter_6">Meter #6 Reading (kWH)</label>
+            <input class="meter_input" id="meter_6" type="number" />
+          </div>
+          <p class="meter_amount">To pay: <span>200.0</span></p>
+
+          <button type="submit">Calculate</button>
+
+          <div id="info">
+            <small id="total_units">Total units: 5</small>
+            <small id="unit_rate">Price per unit: ₹6</small>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script src="script.js" />
+  </body>
+</html>
